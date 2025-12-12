@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Branding Premium • Studio — Essential · Pro · Ultra</title>
+    <meta name="description" content="Branding Premium para negócios que pensam grande. Identidade visual, presença digital e performance com estética minimalista." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Branding Premium • Studio" />
+    <meta property="og:description" content="Branding Premium para negócios que pensam grande. Identidade visual, presença digital e performance." />
+    <meta property="og:image" content="https://res.cloudinary.com/dfbsag282/image/upload/v1765043452/Pack_imob_xo0kc5.png" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: '#0a84ff',
+                muted: '#f3f4f6'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Playfair Display', 'serif']
+            }
+          }
+        }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      :root{color-scheme: light;}
+      body {font-family: 'Inter', system-ui, sans-serif}
+      h1,h2,h3{font-family:'Playfair Display', serif}
+    </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '15118203533411971');
+      fbq('track', 'PageView');
+    </script>
+
+  </head>
+  <body class="bg-white text-slate-900 antialiased leading-relaxed">
+
+    <!-- noscript for pixel (must be in body) -->
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=15118203533411971&ev=PageView&noscript=1" /></noscript>
+
+    <!-- Container -->
+    <header class="max-w-6xl mx-auto px-6 py-8 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 bg-slate-100 rounded flex items-center justify-center text-slate-700 font-semibold">IA</div>
+        <div>
+          <div class="text-sm text-slate-600">Studio</div>
+          <div class="font-semibold text-lg">Branding Premium</div>
+        </div>
+      </div>
+      <nav class="flex items-center gap-4 text-sm">
+        <a href="#packages" class="text-slate-700 hover:underline">Pacotes</a>
+        <a href="#process" class="text-slate-700 hover:underline">Processo</a>
+        <a href="#portfolio" class="text-slate-700 hover:underline">Portfólio</a>
+        <a href="/solicitar-proposta.html" class="text-slate-700 hover:underline">Solicitar Proposta</a>
+        <a href="#contact" class="bg-slate-900 text-white px-4 py-2 rounded-md text-sm">Contato</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="max-w-5xl mx-auto px-6 py-12 text-center">
+      <h1 class="text-4xl md:text-5xl font-semibold leading-tight">Branding Premium para negócios que pensam grande.</h1>
+      <p class="mt-6 text-lg text-slate-600 max-w-3xl mx-auto">Uma identidade visual impecável, clara e sofisticada — criada para elevar sua marca, aumentar autoridade e atrair clientes de maior valor.</p>
+      <div class="mt-8 flex items-center justify-center gap-4">
+        <a href="#contact" class="inline-flex items-center gap-3 bg-slate-900 text-white px-6 py-3 rounded-md font-medium">Quero elevar minha marca</a>
+        <a href="#packages" class="inline-flex items-center gap-2 border border-slate-200 px-5 py-3 rounded-md text-slate-700">Ver pacotes</a>
+      </div>
+      <div class="mt-10 flex justify-center">
+        <img src="https://res.cloudinary.com/dfbsag282/image/upload/v1765043452/Pack_imob_xo0kc5.png" alt="mock" class="w-72 h-auto rounded-md shadow-sm" />
+      </div>
+    </section>
+
+    <!-- What is branding -->
+    <section class="bg-white border-t border-b border-slate-100 py-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-2xl font-semibold">Muito além de um logotipo.</h2>
+            <p class="mt-4 text-slate-600">Branding Premium é a construção de um sistema visual completo — pensado para comunicar valor, confiança e identidade em cada ponto de contato.</p>
+            <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-slate-600">
+              <li>✔ Percepção imediata de profissionalismo</li>
+              <li>✔ Posicionamento claro no mercado</li>
+              <li>✔ Comunicação visual consistente</li>
+              <li>✔ Atração de clientes qualificados</li>
+            </ul>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-lg">
+            <h3 class="font-medium">Benefícios</h3>
+            <ol class="mt-4 text-slate-600 list-decimal list-inside space-y-2">
+              <li>Eleva a percepção de valor da sua marca</li>
+              <li>Melhora conversões e confiança</li>
+              <li>Entrega clareza visual em todos os canais</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="max-w-6xl mx-auto px-6 py-14">
+      <h2 class="text-3xl font-semibold text-center">Escolha o nível ideal para sua marca</h2>
+      <p class="text-center text-slate-600 mt-3">Pacotes pensados para diferentes necessidades — todos com foco em resultado e estética.</p>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <!-- Essential -->
+        <div class="border rounded-lg p-6 shadow-sm">
+          <div class="text-sm text-slate-500">Essencial</div>
+          <h3 class="text-xl font-semibold mt-2">BRANDING ESSENTIAL</h3>
+          <p class="mt-3 text-slate-600">Identidade visual refinada e bem estruturada — base perfeita para começar.</p>
+          <ul class="mt-4 text-slate-600 space-y-2">
+            <li>• Identidade Visual completa (logo + variações)</li>
+            <li>• Paleta e Tipografia</li>
+            <li>• Construção conceitual</li>
+            <li>• 1 peça aplicada</li>
+            <li>• Mini manual</li>
+          </ul>
+          <div class="mt-6">
+            <a href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1%2C+quero+saber+mais+sobre+o+BRANDING+ESSENTIAL" class="block text-center bg-white border border-slate-200 px-4 py-2 rounded-md">Quero o Essential</a>
+          </div>
+        </div>
+
+        <!-- Pro -->
+        <div class="border rounded-lg p-6 shadow-sm">
+          <div class="text-sm text-slate-500">Profissional</div>
+          <h3 class="text-xl font-semibold mt-2">BRANDING PRO</h3>
+          <p class="mt-3 text-slate-600">Identidade + presença digital profissional para negócios que desejam ir além.</p>
+          <ul class="mt-4 text-slate-600 space-y-2">
+            <li>• Tudo do Essential</li>
+            <li>• Modernização de Instagram</li>
+            <li>• BIO otimizada com CTA</li>
+            <li>• Mini site profissional (Netlify)</li>
+            <li>• 3 artes premium</li>
+          </ul>
+          <div class="mt-6">
+            <a href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1%2C+quero+saber+mais+sobre+o+BRANDING+PRO" class="block text-center bg-slate-900 text-white px-4 py-2 rounded-md">Quero o Pro</a>
+          </div>
+        </div>
+
+        <!-- Ultra -->
+        <div class="border rounded-lg p-6 shadow-sm ring-1 ring-slate-100">
+          <div class="text-sm text-slate-500">Transformação</div>
+          <h3 class="text-xl font-semibold mt-2">BRANDING ULTRA</h3>
+          <p class="mt-3 text-slate-600">Transformação completa com presença digital plena e performance.</p>
+          <ul class="mt-4 text-slate-600 space-y-2">
+            <li>• Tudo do Pro</li>
+            <li>• Site Premium (Netlify)</li>
+            <li>• Cartão Digital Imersivo</li>
+            <li>• Pack de 10 artes</li>
+            <li>• Brandbook completo + consultoria</li>
+          </ul>
+          <div class="mt-6">
+            <a href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1%2C+quero+saber+mais+sobre+o+BRANDING+ULTRA" class="block text-center bg-gradient-to-r from-slate-900 to-slate-700 text-white px-4 py-2 rounded-md">Quero transformação</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- compare table -->
+      <div class="mt-12 overflow-x-auto bg-white">
+        <table class="min-w-full text-sm border-collapse">
+          <thead>
+            <tr class="text-left text-slate-600 border-b border-slate-100">
+              <th class="p-4">Itens</th>
+              <th class="p-4">Essential</th>
+              <th class="p-4">Pro</th>
+              <th class="p-4">Ultra</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr class="border-b border-slate-100"><td class="p-4">Identidade Visual</td><td class="p-4">✔</td><td class="p-4">✔</td><td class="p-4">✔</td></tr>
+            <tr class="border-b border-slate-100"><td class="p-4">Paleta / Tipografia</td><td class="p-4">✔</td><td class="p-4">✔</td><td class="p-4">✔</td></tr>
+            <tr class="border-b border-slate-100"><td class="p-4">Instagram Modernizado</td><td class="p-4">—</td><td class="p-4">✔</td><td class="p-4">✔</td></tr>
+            <tr class="border-b border-slate-100"><td class="p-4">Mini Site (Netlify)</td><td class="p-4">—</td><td class="p-4">✔</td><td class="p-4">✔</td></tr>
+            <tr class="border-b border-slate-100"><td class="p-4">Pack de Artes</td><td class="p-4">—</td><td class="p-4">3</td><td class="p-4">10</td></tr>
+            <tr class="border-b border-slate-100"><td class="p-4">Cartão Digital</td><td class="p-4">—</td><td class="p-4">—</td><td class="p-4">✔</td></tr>
+            <tr class="border-b border-slate-100"><td class="p-4">Brandbook</td><td class="p-4">Básico</td><td class="p-4">Médio</td><td class="p-4">Completo</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="max-w-5xl mx-auto px-6 py-12">
+      <h2 class="text-2xl font-semibold text-center">Nosso processo</h2>
+      <p class="text-center text-slate-600 mt-2">Clareza, velocidade e direção criativa — para resultados reais.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-slate-50 rounded-lg text-center">
+          <div class="text-xl font-semibold">1</div>
+          <h3 class="mt-3 font-medium">Diagnóstico</h3>
+          <p class="mt-2 text-slate-600">Compreendemos o negócio, público e objetivos.</p>
+        </div>
+        <div class="p-6 bg-slate-50 rounded-lg text-center">
+          <div class="text-xl font-semibold">2</div>
+          <h3 class="mt-3 font-medium">Direção Criativa</h3>
+          <p class="mt-2 text-slate-600">Alinhamos conceito, tom e personalidade visual.</p>
+        </div>
+        <div class="p-6 bg-slate-50 rounded-lg text-center">
+          <div class="text-xl font-semibold">3</div>
+          <h3 class="mt-3 font-medium">Entrega</h3>
+          <p class="mt-2 text-slate-600">Entregamos ativos prontos e orientações para uso.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-2xl font-semibold text-center">Portfólio</h2>
+      <p class="text-center text-slate-600 mt-2">Alguns trabalhos e aplicações.</p>
+      <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- placeholders -->
+        <div class="h-40 bg-slate-50 rounded-lg flex items-center justify-center">Mockup 1</div>
+        <div class="h-40 bg-slate-50 rounded-lg flex items-center justify-center">Mockup 2</div>
+        <div class="h-40 bg-slate-50 rounded-lg flex items-center justify-center">Mockup 3</div>
+        <div class="h-40 bg-slate-50 rounded-lg flex items-center justify-center">Mockup 4</div>
+        <div class="h-40 bg-slate-50 rounded-lg flex items-center justify-center">Mockup 5</div>
+        <div class="h-40 bg-slate-50 rounded-lg flex items-center justify-center">Mockup 6</div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-white border-t border-slate-100 py-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center">Depoimentos</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-lg bg-slate-50">“Excelente trabalho, profissionalismo e resultado.”<div class="mt-4 text-sm text-slate-500">— Cliente A</div></div>
+          <div class="p-6 rounded-lg bg-slate-50">“Transformou nossa presença online e nos trouxe clientes melhores.”<div class="mt-4 text-sm text-slate-500">— Cliente B</div></div>
+          <div class="p-6 rounded-lg bg-slate-50">“Entrega rápida e atenção aos detalhes.”<div class="mt-4 text-sm text-slate-500">— Cliente C</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="max-w-3xl mx-auto px-6 py-12 text-center">
+      <h2 class="text-2xl font-semibold">Vamos conversar?</h2>
+      <p class="mt-3 text-slate-600">Agende um diagnóstico rápido ou solicite uma proposta personalizada.</p>
+      <div class="mt-6 flex items-center justify-center gap-4">
+        <a href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1%2C+quero+agendar+um+diagn%C3%B3stico+de+branding" class="inline-flex items-center gap-3 bg-slate-900 text-white px-6 py-3 rounded-md font-medium">Agendar diagnóstico</a>
+        <a href="mailto:contato@seudominio.com" class="inline-flex items-center gap-2 border border-slate-200 px-5 py-3 rounded-md text-slate-700">Enviar e-mail</a>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">*Substitua o número do WhatsApp e o e-mail pelo seus dados antes do deploy.</p>
+    </section>
+
+    <footer class="border-t border-slate-100 mt-12 py-8">
+      <div class="max-w-6xl mx-auto px-6 flex items-center justify-between text-sm text-slate-500">
+        <div>© <span id="year"></span> Branding Premium Studio</div>
+        <div>Feito com atenção • Netlify</div>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  </body>
+
+<!-- solicitar-proposta.html -->
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Solicitar Proposta • Branding Premium Studio</title>
+    <meta name="description" content="Solicite uma proposta personalizada para Branding Premium. Preencha rapidamente e retornaremos com a melhor solução para sua marca." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>body{font-family:Inter,system-ui,sans-serif} h1,h2{font-family:'Playfair Display',serif}</style>
+
+    <!-- Meta Pixel Code (same pixel) -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '15118203533411971');
+      fbq('track', 'PageView');
+    </script>
+  </head>
+  <body class="bg-white text-slate-900 antialiased">
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=15118203533411971&ev=PageView&noscript=1" /></noscript>
+
+    <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 bg-slate-100 rounded flex items-center justify-center text-slate-700 font-semibold">IA</div>
+        <div>
+          <div class="text-sm text-slate-600">Studio</div>
+          <div class="font-semibold text-lg">Branding Premium</div>
+        </div>
+      </div>
+      <nav class="flex items-center gap-4 text-sm">
+        <a href="/" class="text-slate-700 hover:underline">Página Inicial</a>
+        <a href="/solicitar-proposta.html" class="bg-slate-900 text-white px-3 py-2 rounded-md">Solicitar Proposta</a>
+      </nav>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 py-12">
+      <h1 class="text-3xl font-semibold">Solicitar Proposta Personalizada</h1>
+      <p class="mt-3 text-slate-600">Preencha rapidamente e retornaremos com a melhor solução para sua marca. Este formulário ajuda a qualificar o projeto — assim conseguimos propor o pacote ideal.</p>
+
+      <form id="proposalForm" class="mt-8 grid gap-4">
+        <input name="name" placeholder="Nome completo" required class="border border-slate-200 rounded px-4 py-3" />
+        <input name="brand" placeholder="Nome da marca" required class="border border-slate-200 rounded px-4 py-3" />
+        <input name="segment" placeholder="Segmento (ex.: Imobiliário, Saúde, E-commerce)" class="border border-slate-200 rounded px-4 py-3" />
+        <select name="stage" class="border border-slate-200 rounded px-4 py-3">
+          <option value="">Momento atual da marca</option>
+          <option value="start">Início</option>
+          <option value="reposition">Reposicionamento</option>
+          <option value="scale">Profissionalização / Escala</option>
+        </select>
+        <select name="interest" class="border border-slate-200 rounded px-4 py-3">
+          <option value="">Pacote de interesse</option>
+          <option value="essential">Branding Essential</option>
+          <option value="pro">Branding Pro</option>
+          <option value="ultra">Branding Ultra</option>
+          <option value="nao-sei">Ainda não sei</option>
+        </select>
+        <input name="whatsapp" placeholder="WhatsApp (com DDI, ex: 55719xxxxxxx)" required class="border border-slate-200 rounded px-4 py-3" />
+        <input name="email" placeholder="E-mail" class="border border-slate-200 rounded px-4 py-3" />
+        <textarea name="notes" placeholder="Observações rápidas (opcional)" class="border border-slate-200 rounded px-4 py-3" rows="4"></textarea>
+
+        <div class="flex items-center gap-4">
+          <button type="submit" class="bg-slate-900 text-white px-6 py-3 rounded-md">Enviar solicitação</button>
+          <a href="https://wa.me/5571991261474?text=Quero%20iniciar%20meu%20processo%20de%20Branding%20Premium." class="inline-flex items-center px-5 py-3 border border-slate-200 rounded-md text-slate-700">Prefero WhatsApp</a>
+        </div>
+
+        <p class="text-sm text-slate-500">Após envio, analisamos e retornamos em até 24–48h úteis. Reservamos poucos atendimentos por semana para manter a qualidade.</p>
+      </form>
+    </main>
+
+    <footer class="border-t border-slate-100 mt-12 py-8">
+      <div class="max-w-6xl mx-auto px-6 flex items-center justify-between text-sm text-slate-500">
+        <div>© <span id="year2"></span> Branding Premium Studio</div>
+        <div>Feito com atenção • Netlify</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year2').textContent = new Date().getFullYear();
+
+      document.getElementById('proposalForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        const f = e.target;
+        const data = {
+          name: f.name.value.trim(),
+          brand: f.brand.value.trim(),
+          segment: f.segment.value.trim(),
+          stage: f.stage.value,
+          interest: f.interest.value,
+          whatsapp: f.whatsapp.value.trim(),
+          email: f.email.value.trim(),
+          notes: f.notes.value.trim()
+        };
+        // Construct message and open WhatsApp for premium qualification
+        const msg = encodeURIComponent(`Olá! Solicitei uma proposta.
+Nome: ${data.name}
+Marca: ${data.brand}
+Segmento: ${data.segment}
+Momento: ${data.stage}
+Interesse: ${data.interest}
+WhatsApp: ${data.whatsapp}
+E-mail: ${data.email}
+Observações: ${data.notes}`);
+        const wa = `https://wa.me/5571991261474?text=${msg}`;
+        window.open(wa, '_blank');
+      });
+    </script>
+  </body>
+</html>
+
+</html>

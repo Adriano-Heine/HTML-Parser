@@ -4,10 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
-import minimalistCosmetic from "@assets/generated_images/minimalist_cosmetic_brand_identity.png";
-import techStartup from "@assets/generated_images/tech_startup_brand_identity.png";
-import architectureFirm from "@assets/generated_images/architecture_firm_brand_identity.png";
-
 // Navigation
 const Navbar = () => {
   return (
@@ -379,9 +375,24 @@ const Process = () => {
 // Portfolio Placeholder
 const Portfolio = () => {
   const portfolioItems = [
-    { id: 1, title: "Lumina Cosmetics", category: "Cosméticos de Luxo", image: minimalistCosmetic },
-    { id: 2, title: "Nexus Tech", category: "Tecnologia & Inovação", image: techStartup },
-    { id: 3, title: "Arch & Co", category: "Arquitetura e Interiores", image: architectureFirm }
+    { 
+      id: 1, 
+      title: "Natalia Marchan", 
+      category: "Corretora de Imóveis", 
+      image: "https://res.cloudinary.com/dfbsag282/image/upload/v1764882204/Loco_corretora_ueqric.png" 
+    },
+    { 
+      id: 2, 
+      title: "Lucas Guimarães", 
+      category: "Negócios Imobiliários", 
+      image: "https://res.cloudinary.com/dfbsag282/image/upload/v1764859212/Logo-imobili%C3%A1ria_jhphcg.png" 
+    },
+    { 
+      id: 3, 
+      title: "Paulucy", 
+      category: "Negócios Imobiliários", 
+      image: "https://res.cloudinary.com/dfbsag282/image/upload/v1764860009/Luxury_gjhgs2.png" 
+    }
   ];
 
   return (
@@ -391,7 +402,7 @@ const Portfolio = () => {
         
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {portfolioItems.map((item) => (
-            <div key={item.id} className="group relative aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden cursor-pointer">
+            <div key={item.id} className="group relative aspect-[3/4] bg-slate-50 rounded-lg overflow-hidden cursor-pointer border border-slate-100">
                <img 
                  src={item.image} 
                  alt={item.title}

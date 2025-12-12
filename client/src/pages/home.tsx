@@ -220,10 +220,14 @@ const Packages = () => {
   ];
 
   return (
-    <section id="packages" className="py-24 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="packages" className="py-24 bg-slate-50 relative overflow-hidden">
+      {/* Background Elements for Glassmorphism Context */}
+      <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-blue-200/20 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-slate-200/40 rounded-full blur-[100px] pointer-events-none" />
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-4xl font-serif font-medium mb-4">Escolha o nível ideal</h2>
+          <h2 className="text-4xl font-serif font-medium mb-4 text-slate-900">Escolha o nível ideal</h2>
           <p className="text-slate-600 text-lg">
             Pacotes pensados para diferentes momentos de negócio — todos com foco absoluto em resultado e estética premium.
           </p>
@@ -237,26 +241,34 @@ const Packages = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className={`relative flex flex-col p-8 rounded-2xl border ${pkg.featured ? 'border-slate-900 shadow-xl bg-slate-900 text-white' : 'border-slate-200 bg-white text-slate-900'}`}
+              whileHover={{ y: -10, scale: 1.02 }}
+              className={`relative flex flex-col p-8 rounded-2xl border transition-all duration-300 group
+                ${pkg.featured 
+                  ? 'bg-slate-900/90 backdrop-blur-xl border-slate-700 shadow-2xl shadow-slate-900/20 text-white ring-1 ring-white/10' 
+                  : 'bg-white/60 backdrop-blur-xl border-white/50 shadow-xl shadow-slate-200/50 text-slate-900 hover:bg-white/80 hover:shadow-2xl hover:shadow-slate-200/80 hover:border-white/80'
+                }
+              `}
             >
               {pkg.featured && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg shadow-blue-500/30">
                   Mais Popular
                 </div>
               )}
               
-              <div className={`text-sm font-medium mb-4 ${pkg.featured ? 'text-slate-300' : 'text-slate-500'}`}>
+              <div className={`text-sm font-medium mb-4 tracking-wide uppercase ${pkg.featured ? 'text-blue-300' : 'text-blue-600'}`}>
                 {pkg.tag}
               </div>
-              <h3 className="text-2xl font-bold mb-4 font-serif">{pkg.name}</h3>
+              <h3 className="text-3xl font-bold mb-4 font-serif">{pkg.name}</h3>
               <p className={`text-sm mb-8 leading-relaxed ${pkg.featured ? 'text-slate-300' : 'text-slate-600'}`}>
                 {pkg.desc}
               </p>
               
-              <div className="flex-1 space-y-4 mb-8">
+              <div className="flex-1 space-y-4 mb-10">
                 {pkg.features.map((feat, i) => (
                   <div key={i} className="flex items-start gap-3 text-sm">
-                    <Check className={`w-4 h-4 mt-0.5 shrink-0 ${pkg.featured ? 'text-blue-400' : 'text-slate-900'}`} />
+                    <div className={`mt-0.5 rounded-full p-0.5 ${pkg.featured ? 'bg-blue-500/20 text-blue-300' : 'bg-blue-100 text-blue-600'}`}>
+                      <Check className="w-3 h-3" />
+                    </div>
                     <span className={pkg.featured ? 'text-slate-200' : 'text-slate-700'}>{feat}</span>
                   </div>
                 ))}
@@ -264,11 +276,16 @@ const Packages = () => {
               
               <Button 
                 asChild 
-                className={`w-full h-12 ${pkg.featured ? 'bg-white text-slate-900 hover:bg-slate-100' : ''}`}
+                className={`w-full h-14 text-base font-medium rounded-xl transition-all duration-300 shadow-lg
+                  ${pkg.featured 
+                    ? 'bg-white text-slate-900 hover:bg-blue-50 hover:scale-[1.02] shadow-white/10' 
+                    : 'bg-slate-900 text-white hover:bg-slate-800 hover:scale-[1.02] shadow-slate-900/20'
+                  }
+                `}
                 variant={pkg.featured ? "secondary" : "default"}
               >
                 <a href={`https://wa.me/55999999999?text=Olá, tenho interesse no pacote ${pkg.name}`}>
-                  {pkg.cta}
+                  {pkg.cta} <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
             </motion.div>
